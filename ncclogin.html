@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ncc.css">
+
+</head>
+<body>
+    <header id="head">
+        <a href="https://mod.gov.in/">MINISTRY OF DEFENCE</a>
+    </header>
+    <section id="sec1">
+        <div id="sec1_div1">
+            <img src="ncc-logo-png-1.png" alt="">
+            <h1>National Cadets Cops</h1>
+        </div>
+    </section> 
+    <section id="form">
+        <div id="form_1">
+            <!-- <h1>REGISTRATION FORM</h1> -->
+            <div id="privacy">
+                <div id="img_upload">
+                    <img src="" alt="" id="img">
+                    <input type="file" id="pic">
+                    <h5>Upload Your Photo</h5>
+                </div>
+                <div id="privacy2">
+                    <h1>Login Details</h1>
+                    <form action="">
+                        <label for="">Email Id</label><br>
+                        <input type="Email" required><br>
+                        <h4>Create Password</h4>
+                        <label for="">Password</label><br>
+                        <input type="password" id="password" oninput="validatePassword()"><br>
+                        <p id="error"></p>
+                        <label for="">Confirm Password</label><br>
+                        <input type="password" oninput="matchPassword()" id='password2'><br>
+                        <p id="error2"></p><br>
+                        <label for="">Select Module</label><br>
+                        <select name="" id="" required>
+                            <option value="">Module1</option>
+                            <option value="">Module2</option>
+                            <option value="">Module3</option>
+                        </select><br>
+                        <input type="submit" value="Create New Account" id="save" onsubmit="accountCreate()">
+                    </form>
+
+                </div>
+
+            </div>
+            <div id="details">
+                <h1>REGISTRATION FORM</h1>
+
+                <form action="" class="form">
+                    <label for="full_name">Full Name: <span class="imp">*</span></label>
+                    <input type="text" id="full_name" class="imp2" name='full_name' required>
+                    <label for="last_name">Last Name: <span class="imp">*</span></label>
+                    <input type="text" id="last_name" class="imp2" name="last_name"required><br>
+                    <label for="fname">Father's Name: <span class="imp">*</span></label><br>
+                    <input type="text" id="fname" class="inp" name="fname"required> <br>
+                    <label for="mname">Mother's Name: <span class="imp">*</span></label><br>
+                    <input type="text" id="mname" class="inp" name="mname"required> <br>
+                    <label for="">Blood Group:</label>
+                    <input type="text" id="blood_group" class="imp2"name="grp">
+                    <label for="dob">DOB:</label>
+                    <input type="date" id="dob" class="imp2"name="DOB"><br>
+                    <label for="height">Height(cm):</label>
+                    <input type="text" id="height" class="imp2"name="height">
+                    <label for="weight">Weight(Kg):</label>
+                    <input type="text" id="weight" class="imp2"name="weight"><br>
+                    <label for="gen">Gender:</label>
+                    <select id="gen" class="imp2" name="gen">
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Others</option>
+                    </select><br>
+    
+                    
+                    <label for="adhaarcard">Aadhar Card: <span class="imp">*</span></label>
+                    <input type="file" id="adhaarcard" class="imp2" name="aadhar" required><br>
+                    <label for="marksheet">High School Marksheet:<span class="imp">*</span></label>
+                    <input type="file" id="marksheet" class="imp2"name="marksheet" required><br>
+                    
+                    <label for="address1">Address: <span class="imp">*</span></label><br>
+                    <input type="text" id="address1" class="inp" name="address"required><br>
+                    <input type="text" id="address2" class="inp" name="address"><br>
+                    <label for="pin">Pincode: <span class="imp">*</span></label>
+                    <input type="text" id="pin" class="imp2"name="Pin">
+                    <label for="city">City: <span class="imp">*</span></label>
+                    <input type="text" id="city" class="imp2" name="City"required><br>
+                    
+                    <input type="submit" id="submit">
+                    
+                
+                </form>
+            </div>
+            
+        </div>
+    </section>   
+    <footer>
+        <section id="foot_1">
+            <a href="ncc.html">Home Page</a>
+            <a href="https://indiancc.nic.in/contact-us/">Contact Us</a>
+            <a href="https://indiancc.nic.in/help">Help</a>
+        </section>
+        <section id="foot_2">
+            <p>
+                Content Owned by NCC
+                Developed and hosted by <a href="">National Informatics Centre,Ministry of Electronics & Information Technology</a>, Government of India.
+            </p>
+        </section>
+    </footer>
+    <script src="ncclogin.js"></script>
+
+</body>
+</html>
